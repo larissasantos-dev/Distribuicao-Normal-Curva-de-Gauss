@@ -24,7 +24,7 @@ def calcular_mediana(notas):
     meio = n // 2
     if n % 2 == 1:
         return float(ordenadas[meio])
-    return (ordenadas[meio - 1] + ordenadas[meio] / 2)
+    return (ordenadas[meio - 1] + ordenadas[meio]) / 2
 
 def calcular_modas(notas):
     """Valor(es) maqis frequente(s). Pode haver mais de uma moda."""
