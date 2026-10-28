@@ -14,7 +14,7 @@ def carregar_notas(caminho):
     return notas
 
 def calcular_media(notas):
-    """Media aritmetica: soma de todos os valores divididas pela quantidade."""
+    """Media aritmetica: soma de todos os valores divididos pela quantidade."""
     return sum(notas) / len(notas)
 
 def calcular_mediana(notas):
@@ -27,7 +27,7 @@ def calcular_mediana(notas):
     return (ordenadas[meio - 1] + ordenadas[meio]) / 2
 
 def calcular_modas(notas):
-    """Valor(es) maqis frequente(s). Pode haver mais de uma moda."""
+    """Valor(es) mais frequente(s). Pode haver mais de uma moda."""
     frequencias = {}
     for nota in notas:
         frequencias[nota] = frequencias.get(nota, 0) + 1
@@ -57,7 +57,7 @@ if __name__ == "__main__":
           "| modas:", calcular_modas(teste),
           "| desvio:", round(calcular_desvio_padrao(teste, m), 4))
 
-    notas = carregar_notas("C:/Users/Larissa/Desktop/Lala/IFSP/Estatistica/projeto_python_teste/projeto_distribuicao_normal_curva_de_gauss/Distribuicao-Normal-Curva-de-Gauss/StudentsPerformance.csv")
+    notas = carregar_notas("StudentsPerformance.csv")
     media = calcular_media(notas)
     desvio = calcular_desvio_padrao(notas, media)
 

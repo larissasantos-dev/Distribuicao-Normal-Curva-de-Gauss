@@ -10,16 +10,15 @@
 - Nomes de variáveis: `notas`, `media`, `desvio`
 - Só podem ser usados: csv, math, matplotlib
 
-## Funções da Pessoa 1 (parte_pessoa1.py)
-- carregar_notas(caminho) -> lista de int
-- calcular_media(notas) -> float
-- calcular_mediana(notas) -> float
-- calcular_modas(notas) -> lista
-- calcular_variancia(notas, media) -> float (amostral)
-- calcular_desvio_padrao(notas, media) -> float (amostral)
-- calcular_assimetria(notas, media, desvio) -> float
+## Funções da Larissa (parte_larissa.py)
+- carregar_notas(caminho), calcular_media(notas), calcular_mediana(notas),
+  calcular_modas(notas), calcular_variancia(notas, media),
+  calcular_desvio_padrao(notas, media), calcular_assimetria(notas, media, desvio)
 
-## Funções da Pessoa 2 (parte_pessoa2.py)
-- regra_empirica(notas, media, desvio) -> contagens e percentuais
-- calcular_z(valor, media, desvio) -> float
-- gerar_grafico(notas, media, desvio) -> salva histograma_curva_normal.png
+## Funções da Lana (parte_lana.py)
+- regra_empirica(notas, media, desvio), calcular_z(valor, media, desvio),
+  gerar_grafico(notas, media, desvio)
+
+## Valores de referência (math score)
+n = 1000 | mín 0 | máx 100 | média 66,089 | mediana 66,0 | moda 65
+variância 229,919 | desvio 15,1631 | assimetria -0,2781
